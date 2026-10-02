@@ -1,9 +1,6 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+/* 4. Style the Navigation Bar */
 
-nav {
+.navbar {
     background-color: #333;
     font-size: 1.2em;
     padding: 1em;
@@ -14,51 +11,60 @@ nav {
     z-index: 1000;
 }
 
-nav ul {
-    list-style-type: none;
+.navbar ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.navbar li {
     display: inline;
-    margin: 0.1em; 
+    margin: 0 1em;
 }
 
-nav ul li a {
-    color: white;
+.navbar li a {
+    color: #fff;
     text-decoration: none;
-    padding: 0.5em 1em;
-    transition: background-color 0.3s;
 }
 
-main.main-content {
+/* 5. Style the Main Content */
+
+.main-content, main, #main {
     padding-top: 5em;
 }
 
-main.main-content section {
+.main-content section, main section {
     padding: 2em 1em;
     text-align: center;
 }
 
-section#home{
+#home h1 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
 }
 
-section#home p {
+#home p {
     font-size: 1.2em;
     color: #666;
 }
 
-section#portfolio.portfolio-container {
+/* 6. Style the Portfolio Section */
+
+.portfolio-container, #portfolio .container, #portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1em;
 }
 
-article.portfolio-item {
+#portfolio .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.portfolio-item {
     background-color: #fff;
     border: 1px solid #ddd;
     margin: 1em;
@@ -67,27 +73,40 @@ article.portfolio-item {
     width: 30%;
     box-sizing: border-box;
     transition: transform 0.3s;
-    transform: scale(1.05);
 }
- 
-h1, h2, h3 {
+
+.portfolio-item h3, .portfolio-item h2 {
     font-weight: bold;
     margin-bottom: 0.5em;
-
 }
 
-p {
-    margin-bottom: 0.5em;   
+.portfolio-item p {
+    margin-bottom: 0.5em;
     color: #666;
 }
 
-img { 
+.portfolio-item img {
     width: 100%;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-footer#footer{
-    background-color: #222;
-    text-emphasis-color: #fff;
-    
+/* 7. Add Hover Effect for Portfolio Items */
+
+.portfolio-item:hover {
+    transform: scale(1.05);
 }
+
+/* 8. Style the Footer */
+
+#footer, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    
+
